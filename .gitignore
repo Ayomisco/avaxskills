@@ -3,6 +3,9 @@ node_modules/
 .pnp
 .pnp.js
 
+# Lock files — Vercel installs fresh; committing lock pins vulnerable versions
+website/package-lock.json
+
 # Build outputs
 .next/
 out/
