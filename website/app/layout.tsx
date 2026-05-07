@@ -1,36 +1,97 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const SITE_URL = "https://avaxskills.com";
+const TITLE = "AVAXSKILLS — Build on Avalanche. Your AI Agent Already Knows How.";
+const DESCRIPTION =
+  "Every Avalanche concept covered — Subnets, Warp, x402, DeFi, RWA, security, and more. Any AI agent fetches exactly what it needs over HTTPS. No install. No config. One URL.";
+
+export const viewport: Viewport = {
+  themeColor: "#E84142",
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
-  title: "AVAXSKILLS — AI Agent Skills for Avalanche",
-  description:
-    "The missing layer between AI agents and Avalanche apps. Modular SKILL.md guides for Avalanche — Subnets, Warp, x402, DeFi. Agents pull markdown over HTTPS; no install.",
-  keywords: [
-    "avalanche",
-    "avax",
-    "ai agent skills",
-    "blockchain",
-    "subnet",
-    "warp messaging",
-    "x402",
-    "smart contracts",
-    "defi",
-  ],
-  openGraph: {
-    title: "AVAXSKILLS — AI Agent Skills for Avalanche",
-    description:
-      "Modular SKILL.md guides for Avalanche. Agents pull markdown over HTTPS; no install.",
-    url: "https://avaxskills.com",
-    siteName: "AVAXSKILLS",
-    type: "website",
+  metadataBase: new URL(SITE_URL),
+
+  title: {
+    default: TITLE,
+    template: "%s | AVAXSKILLS",
   },
+
+  description: DESCRIPTION,
+
+  keywords: [
+    "Avalanche",
+    "AVAX",
+    "AI agent skills",
+    "Subnet deployment",
+    "Warp messaging",
+    "x402 payments",
+    "DeFi Avalanche",
+    "RWA tokenization",
+    "smart contracts",
+    "Claude Code Avalanche",
+    "Cursor Avalanche",
+    "Copilot Avalanche",
+    "Avalanche L1",
+    "Teleporter",
+    "AvalancheGo",
+    "EVM",
+    "Web3 developer tools",
+    "openskills",
+    "SKILL.md",
+  ],
+
+  authors: [{ name: "ayomisco_s", url: "https://x.com/ayomisco_s" }],
+  creator: "ayomisco_s",
+  publisher: "AVAXSKILLS",
+
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "AVAXSKILLS",
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: "en_US",
+  },
+
   twitter: {
     card: "summary_large_image",
-    title: "AVAXSKILLS",
-    description: "AI agent skills for building on Avalanche.",
+    site: "@ayomisco_s",
     creator: "@ayomisco_s",
+    title: "AVAXSKILLS",
+    description:
+      "Build on Avalanche. Your AI agent already knows how. Every concept covered — Subnets, Warp, x402, DeFi. One URL.",
   },
-  robots: "index, follow",
+
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
+
+  manifest: "/manifest.json",
+
+  alternates: {
+    canonical: SITE_URL,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+
+  category: "technology",
 };
 
 export default function RootLayout({
