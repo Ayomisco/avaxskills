@@ -1,0 +1,1099 @@
+{
+  "generated": "2026-05-07T19:30:20.299Z",
+  "count": 57,
+  "baseUrl": "https://avaxskills.com",
+  "rootSkill": "https://avaxskills.com/SKILL.md",
+  "skills": [
+    {
+      "name": "explorer-guide",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Read and navigate Snowtrace (C-Chain), P-Chain explorer, and X-Chain explorer on Avalanche.",
+      "trigger": "Use when: user needs to read blockchain data on Snowtrace, understand transaction details, look up contract state, read events/logs, or navigate Avalanche block explorers.\nDo NOT use for: programmatic data queries (use avalanche-rpc or avalanche-js), writing transactions.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "avalanche-rpc",
+        "first-contract",
+        "concepts"
+      ],
+      "url": "https://avaxskills.com/explorer-guide/",
+      "skillUrl": "https://avaxskills.com/explorer-guide/SKILL.md"
+    },
+    {
+      "name": "first-contract",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Deploy your first Solidity smart contract on Avalanche C-Chain using Remix IDE.",
+      "trigger": "Use when: user wants to write and deploy their first Solidity contract on Avalanche, asks about Remix IDE, needs a working contract example to start from, or has never deployed a contract before.\nDo NOT use for: Hardhat/Foundry workflows, complex multi-contract systems, upgradeable contracts, production deployments.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "quickstart",
+        "evm-hardhat",
+        "contract-verification",
+        "explorer-guide"
+      ],
+      "url": "https://avaxskills.com/first-contract/",
+      "skillUrl": "https://avaxskills.com/first-contract/SKILL.md"
+    },
+    {
+      "name": "get-testnet-avax",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Get testnet AVAX from the Fuji faucet and manage test tokens for development.",
+      "trigger": "Use when: user needs testnet AVAX for Fuji, faucet is rate-limited, user has zero AVAX on Fuji, or asks how to get test tokens for Avalanche development.\nDo NOT use for: mainnet AVAX acquisition, ERC-20 test tokens (deploy your own), or staking.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji"
+      ],
+      "related_skills": [
+        "wallet-setup",
+        "first-contract",
+        "evm-hardhat"
+      ],
+      "url": "https://avaxskills.com/get-testnet-avax/",
+      "skillUrl": "https://avaxskills.com/get-testnet-avax/SKILL.md"
+    },
+    {
+      "name": "local-dev-environment",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Set up a local Avalanche development environment — AvalancheGo local node, Hardhat local chain, Foundry Anvil, and connecting tools. For developers who want to build and test without Fuji.",
+      "trigger": "Use when: user wants to run Avalanche locally, set up a local dev environment, test without spending testnet tokens, run AvalancheGo locally, or debug on a local chain.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "local"
+      ],
+      "related_skills": [
+        "quickstart",
+        "evm-hardhat",
+        "evm-foundry",
+        "subnet-deployment"
+      ],
+      "url": "https://avaxskills.com/local-dev-environment/",
+      "skillUrl": "https://avaxskills.com/local-dev-environment/SKILL.md"
+    },
+    {
+      "name": "quickstart",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Zero to first Avalanche transaction in 10 minutes — wallet setup, testnet AVAX, and deploy a contract.",
+      "trigger": "Use when: user wants to get started with Avalanche, deploy their first contract, has zero blockchain experience, asks 'how do I start', 'hello world on Avalanche', 'how to deploy on Avalanche'.\nDo NOT use for: advanced Subnet deployment, cross-chain messaging, production deployments.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "wallet-setup",
+        "first-contract",
+        "evm-hardhat",
+        "get-testnet-avax"
+      ],
+      "url": "https://avaxskills.com/quickstart/",
+      "skillUrl": "https://avaxskills.com/quickstart/SKILL.md"
+    },
+    {
+      "name": "wallet-setup",
+      "version": "1.0.0",
+      "tier": 0,
+      "description": "Configure MetaMask and Core Wallet for Avalanche C-Chain, Fuji testnet, and custom Subnets.",
+      "trigger": "Use when: user needs to configure a wallet for Avalanche, add Avalanche networks to MetaMask, set up Core Wallet, import a custom Subnet RPC, or asks about AVAX vs WAVAX.\nDo NOT use for: programmatic wallet creation in code (use viem/wagmi skills), Ledger hardware wallet setup.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "get-testnet-avax",
+        "first-contract",
+        "core-wallet"
+      ],
+      "url": "https://avaxskills.com/wallet-setup/",
+      "skillUrl": "https://avaxskills.com/wallet-setup/SKILL.md"
+    },
+    {
+      "name": "avalanche-js",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Use avalanchejs SDK for P-Chain and X-Chain — native AVAX transfers, staking queries, asset creation.",
+      "trigger": "Use when: user needs to interact with P-Chain (staking, validators) or X-Chain (AVAX native transfers) programmatically, or needs the avalanchejs SDK for multi-chain Avalanche operations.\nDo NOT use for: C-Chain EVM operations (use viem/ethers.js), CLI-based validator management (use Avalanche CLI).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "avalanche-rpc",
+        "validator-management",
+        "viem"
+      ],
+      "url": "https://avaxskills.com/avalanche-js/",
+      "skillUrl": "https://avaxskills.com/avalanche-js/SKILL.md"
+    },
+    {
+      "name": "avalanche-rpc",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Interact with Avalanche C/P/X-Chain via RPC — read balances, blocks, transactions, and Avalanche-specific methods.",
+      "trigger": "Use when: user wants to make raw RPC calls to Avalanche, use curl or fetch to query chain state, understand the difference between C/P/X chain APIs, or troubleshoot RPC errors.\nDo NOT use for: viem/ethers.js SDK usage (use viem/wagmi skills), Avalanche CLI commands.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "viem",
+        "avalanche-js",
+        "contract-addresses"
+      ],
+      "url": "https://avaxskills.com/avalanche-rpc/",
+      "skillUrl": "https://avaxskills.com/avalanche-rpc/SKILL.md"
+    },
+    {
+      "name": "contract-verification",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Verify Solidity contracts on Snowtrace, Routescan, Blockscout, and Sourcify using API and CLI.",
+      "trigger": "Use when: user needs to verify a contract on Snowtrace, get source code visible on block explorer, configure hardhat-verify for Avalanche, or use forge verify-contract.\nDo NOT use for: contract development, deployment scripts (that's evm-hardhat/evm-foundry).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "evm-hardhat",
+        "evm-foundry",
+        "security"
+      ],
+      "url": "https://avaxskills.com/contract-verification/",
+      "skillUrl": "https://avaxskills.com/contract-verification/SKILL.md"
+    },
+    {
+      "name": "data-feeds-oracles",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Integrate price feeds and oracle data into Avalanche smart contracts — Chainlink Data Feeds, Pyth Network, Chainlink VRF for randomness, and building oracle-aware DeFi.",
+      "trigger": "Use when: user wants price feeds on Avalanche, integrate Chainlink, use Pyth oracles, get off-chain data on-chain, implement price-based contract logic, or use randomness in contracts.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji"
+      ],
+      "related_skills": [
+        "defi-primitives",
+        "evm-hardhat",
+        "evm-foundry",
+        "security"
+      ],
+      "url": "https://avaxskills.com/data-feeds-oracles/",
+      "skillUrl": "https://avaxskills.com/data-feeds-oracles/SKILL.md"
+    },
+    {
+      "name": "evm-foundry",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Use Foundry/Forge for Avalanche — forge.toml configuration, cast commands, fuzz testing, broadcast deployment.",
+      "trigger": "Use when: user wants to use Foundry on Avalanche, configure forge.toml for Fuji/mainnet, use cast to interact with C-Chain, run forge test with fork testing, or broadcast a deployment script.\nDo NOT use for: Hardhat-specific workflows, non-EVM chains.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "evm-hardhat",
+        "testing",
+        "contract-verification"
+      ],
+      "url": "https://avaxskills.com/evm-foundry/",
+      "skillUrl": "https://avaxskills.com/evm-foundry/SKILL.md"
+    },
+    {
+      "name": "evm-hardhat",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Set up and use Hardhat for Avalanche C-Chain and custom Subnets — compile, test, deploy, verify.",
+      "trigger": "Use when: user wants to set up Hardhat for Avalanche, configure hardhat.config.ts for Fuji/mainnet, write deploy scripts, run tests against Avalanche, or use Hardhat Ignition. Also triggers on 'how to deploy with Hardhat on Avalanche'.\nDo NOT use for: Foundry/Forge workflows, Remix IDE, non-EVM chains.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "evm-foundry",
+        "contract-verification",
+        "testing",
+        "first-contract"
+      ],
+      "url": "https://avaxskills.com/evm-hardhat/",
+      "skillUrl": "https://avaxskills.com/evm-hardhat/SKILL.md"
+    },
+    {
+      "name": "migrate-from-ethereum",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Migrate an existing Ethereum project to Avalanche C-Chain — what changes, what stays the same, config updates, tooling differences, and Avalanche-specific optimizations.",
+      "trigger": "Use when: user is porting an Ethereum project to Avalanche, migrating from Ethereum mainnet, asking what's different on Avalanche vs Ethereum, or rebuilding an Ethereum dApp on Avalanche.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji"
+      ],
+      "related_skills": [
+        "quickstart",
+        "evm-hardhat",
+        "evm-foundry",
+        "concepts",
+        "avalanche-rpc",
+        "why-avalanche"
+      ],
+      "url": "https://avaxskills.com/migrate-from-ethereum/",
+      "skillUrl": "https://avaxskills.com/migrate-from-ethereum/SKILL.md"
+    },
+    {
+      "name": "nft-basics",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Deploy NFTs on Avalanche — ERC-721 and ERC-1155 contracts, IPFS metadata, minting, royalties (EIP-2981), and connecting to marketplaces.",
+      "trigger": "Use when: user wants to create NFTs, deploy an NFT collection, build an NFT marketplace, set up NFT metadata on IPFS, or implement NFT royalties on Avalanche.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji",
+        "custom-l1"
+      ],
+      "related_skills": [
+        "token-standards",
+        "evm-hardhat",
+        "evm-foundry",
+        "contract-verification",
+        "rwa-tokenization"
+      ],
+      "url": "https://avaxskills.com/nft-basics/",
+      "skillUrl": "https://avaxskills.com/nft-basics/SKILL.md"
+    },
+    {
+      "name": "platform-cli",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Complete reference for the Avalanche Platform CLI — the official 2026 replacement for the deprecated Avalanche CLI. Covers install, key management, wallet ops, subnet creation, chain creation, L1 conversion, and validator management.",
+      "trigger": "Use when: user wants to use Platform CLI, install Platform CLI, run platform commands, manage validators with CLI, or anytime someone references `platform subnet`, `platform chain`, `platform keys`, `platform transfer`, or `platform l1` commands.\nAlso use when: user is migrating from the old `avalanche subnet` CLI to the new tooling.\nDo NOT use: for UI-based deployment via Builder Console (use subnet-deployment skill instead).\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet",
+        "local"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "validator-management",
+        "subnet-evm-config"
+      ],
+      "url": "https://avaxskills.com/platform-cli/",
+      "skillUrl": "https://avaxskills.com/platform-cli/SKILL.md"
+    },
+    {
+      "name": "scaffold-avax",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Scaffold an Avalanche dApp from templates using Scaffold-ETH 2 adapted for Avalanche.",
+      "trigger": "Use when: user wants to scaffold a full-stack Avalanche dApp quickly, use Scaffold-ETH 2 on Avalanche, or set up a Next.js + Hardhat monorepo for Avalanche development.\nDo NOT use for: backend-only or CLI tool development, pure smart contract projects without a frontend.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "evm-hardhat",
+        "viem",
+        "wagmi",
+        "evm-wallet-integration"
+      ],
+      "url": "https://avaxskills.com/scaffold-avax/",
+      "skillUrl": "https://avaxskills.com/scaffold-avax/SKILL.md"
+    },
+    {
+      "name": "token-launch",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Launch an ERC-20 token on Avalanche C-Chain — deploy, verify, add liquidity on Trader Joe, and list on DEX aggregators.",
+      "trigger": "Use when: user wants to launch a token, create an ERC-20, add liquidity on Trader Joe, do a TGE (token generation event), or list a token on Avalanche DEXes.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji"
+      ],
+      "related_skills": [
+        "token-standards",
+        "defi-primitives",
+        "evm-hardhat",
+        "contract-verification",
+        "revenue-sharing-tokens"
+      ],
+      "url": "https://avaxskills.com/token-launch/",
+      "skillUrl": "https://avaxskills.com/token-launch/SKILL.md"
+    },
+    {
+      "name": "viem",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "Configure viem TypeScript client for Avalanche C-Chain — wallet client, public client, and contract interactions.",
+      "trigger": "Use when: user wants to use viem on Avalanche, set up createPublicClient or createWalletClient for C-Chain, read/write contracts with viem, or watch events.\nDo NOT use for: React hooks (use wagmi), P-Chain/X-Chain operations (use avalanche-js), non-TypeScript environments.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "wagmi",
+        "evm-hardhat",
+        "evm-wallet-integration"
+      ],
+      "url": "https://avaxskills.com/viem/",
+      "skillUrl": "https://avaxskills.com/viem/SKILL.md"
+    },
+    {
+      "name": "wagmi",
+      "version": "1.0.0",
+      "tier": 1,
+      "description": "React hooks for Avalanche dApps — wallet connection, contract reads/writes, and transaction handling.",
+      "trigger": "Use when: user wants to build a React/Next.js dApp on Avalanche with wallet connection, contract interactions, or transaction state management. Triggers on 'wagmi Avalanche', 'React hooks blockchain', 'wallet connect React'.\nDo NOT use for: non-React environments (use viem), server-side only scripts, mobile apps.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "viem",
+        "evm-wallet-integration",
+        "scaffold-avax",
+        "frontend-ux"
+      ],
+      "url": "https://avaxskills.com/wagmi/",
+      "skillUrl": "https://avaxskills.com/wagmi/SKILL.md"
+    },
+    {
+      "name": "avacloud-indexing",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Use AvaCloud Data API for on-chain indexing, webhooks, event streaming, and managed node access.",
+      "trigger": "Use when: user needs indexed blockchain data, event streaming, webhooks for on-chain events, or managed RPC endpoints for Avalanche. Also triggers on 'Glacier API', 'AvaCloud', 'Avalanche indexing'.\nDo NOT use for: raw RPC calls (use avalanche-rpc), local development (use Hardhat node).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "avalanche-rpc",
+        "bridging"
+      ],
+      "url": "https://avaxskills.com/avacloud-indexing/",
+      "skillUrl": "https://avaxskills.com/avacloud-indexing/SKILL.md"
+    },
+    {
+      "name": "avalanche-l1-economics",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Design Avalanche L1 token economics — gas token design, validator incentives, fee structures, P-Chain costs, and sustainable L1 economy models.",
+      "trigger": "Use when: user wants to design tokenomics for an Avalanche L1, understand L1 validator costs, set fee structures, design a gas token, plan validator incentives, or calculate costs for running an Avalanche L1.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet",
+        "custom-l1"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "platform-cli",
+        "validator-management",
+        "subnet-evm-config",
+        "precompiles",
+        "token-standards"
+      ],
+      "url": "https://avaxskills.com/avalanche-l1-economics/",
+      "skillUrl": "https://avaxskills.com/avalanche-l1-economics/SKILL.md"
+    },
+    {
+      "name": "contract-addresses",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "All Avalanche system contracts — precompiles, WAVAX, Teleporter, DEX routers, and lending protocols on Mainnet and Fuji.",
+      "trigger": "Use when: user needs a contract address on Avalanche C-Chain (WAVAX, Teleporter, Trader Joe, BENQI, Aave, precompiles), or asks 'what is the address of X on Avalanche'.\nDo NOT use for: custom Subnet addresses (those are set at genesis), Ethereum mainnet addresses.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "precompiles",
+        "defi-primitives",
+        "gas"
+      ],
+      "url": "https://avaxskills.com/contract-addresses/",
+      "skillUrl": "https://avaxskills.com/contract-addresses/SKILL.md"
+    },
+    {
+      "name": "custom-vm",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Build and deploy a custom virtual machine on Avalanche — VM interface implementation and deployment.",
+      "trigger": "Use when: user wants to build a non-EVM blockchain on Avalanche, implement a custom VM, or deploy a Go-based virtual machine as a Subnet.\nDo NOT use for: standard EVM Subnet deployment (use subnet-deployment), Solidity contract development.\n",
+      "last_updated": "2026-05-01",
+      "related_skills": [
+        "subnet-deployment",
+        "validator-management"
+      ],
+      "url": "https://avaxskills.com/custom-vm/",
+      "skillUrl": "https://avaxskills.com/custom-vm/SKILL.md"
+    },
+    {
+      "name": "gas",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Avalanche fee mechanics — dynamic base fee, priority fee, gas estimation patterns, and fee config on Subnets.",
+      "trigger": "Use when: user asks about gas fees on Avalanche, why transactions are failing due to gas, how to estimate gas, or how to configure fees on a custom Subnet.\nDo NOT use for: Ethereum mainnet gas (different), token transfer costs (those are gas × price).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-evm-config",
+        "precompiles",
+        "performance-optimization"
+      ],
+      "url": "https://avaxskills.com/gas/",
+      "skillUrl": "https://avaxskills.com/gas/SKILL.md"
+    },
+    {
+      "name": "precompiles",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Complete reference for Avalanche Subnet-EVM precompiles — NativeMinter, FeeManager, AllowList, RewardManager, and Warp.",
+      "trigger": "Use when: user wants to use Avalanche precompiles (NativeMinter, FeeManager, AllowList, WarpMessenger), mint native tokens from a contract, restrict deployers, or adjust fees on-chain.\nDo NOT use for: C-Chain contracts (precompiles only work on Subnets where they're enabled), general ERC-20 minting.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-evm-config",
+        "contract-addresses",
+        "security"
+      ],
+      "url": "https://avaxskills.com/precompiles/",
+      "skillUrl": "https://avaxskills.com/precompiles/SKILL.md"
+    },
+    {
+      "name": "subnet-deployment",
+      "version": "2.0.0",
+      "tier": 2,
+      "description": "Deploy a custom Avalanche L1/Subnet from scratch — genesis config, validator bootstrap, Fuji testnet, and mainnet promotion.",
+      "trigger": "Use when: user wants to create their own blockchain on Avalanche, deploy a Subnet, configure a custom L1, set up Subnet-EVM, bootstrap validators, or asks about Avalanche L1s.\nDo NOT use for: deploying contracts to C-Chain, cross-chain messaging setup, or general EVM development.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "platform-cli",
+        "subnet-evm-config",
+        "warp-messaging",
+        "validator-management",
+        "contract-addresses",
+        "precompiles"
+      ],
+      "url": "https://avaxskills.com/subnet-deployment/",
+      "skillUrl": "https://avaxskills.com/subnet-deployment/SKILL.md"
+    },
+    {
+      "name": "subnet-evm-config",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Configure Subnet-EVM — custom precompiles, gas limits, fee structure, and genesis block design.",
+      "trigger": "Use when: user needs to configure a custom Subnet-EVM genesis, enable precompiles, tune gas limits, set fee config, or design the initial token allocation for a Subnet.\nDo NOT use for: deploying contracts to C-Chain, general EVM configuration (that's Hardhat/Foundry), or Subnet deployment CLI steps (use subnet-deployment).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "precompiles",
+        "validator-management",
+        "security"
+      ],
+      "url": "https://avaxskills.com/subnet-evm-config/",
+      "skillUrl": "https://avaxskills.com/subnet-evm-config/SKILL.md"
+    },
+    {
+      "name": "teleporter",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Deep dive into the Teleporter Solidity library — message receipts, retry logic, fee handling, and local test setup.",
+      "trigger": "Use when: user needs deep Teleporter internals, message retry patterns, fee token approval, receipt handling, or setting up local Teleporter tests. For basic send/receive, use warp-messaging instead.\nDo NOT use for: first-time Warp/Teleporter setup (use warp-messaging), X-Chain/P-Chain operations.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "warp-messaging",
+        "bridging",
+        "testing"
+      ],
+      "url": "https://avaxskills.com/teleporter/",
+      "skillUrl": "https://avaxskills.com/teleporter/SKILL.md"
+    },
+    {
+      "name": "validator-management",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Add and remove validators on Avalanche Subnets — node IDs, staking amounts, uptime monitoring, reward tracking.",
+      "trigger": "Use when: user wants to add/remove validators, check validator uptime, manage staking on a Subnet, or query validator status via API.\nDo NOT use for: deploying the Subnet itself (use subnet-deployment), general Hardhat/contract deployment.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "subnet-evm-config"
+      ],
+      "url": "https://avaxskills.com/validator-management/",
+      "skillUrl": "https://avaxskills.com/validator-management/SKILL.md"
+    },
+    {
+      "name": "warp-messaging",
+      "version": "1.0.0",
+      "tier": 2,
+      "description": "Send and receive cross-chain messages on Avalanche using Warp Messaging and the Teleporter protocol.",
+      "trigger": "Use when: user wants to send messages between chains on Avalanche, implement cross-chain functionality, use Teleporter, bridge data between Subnets, or asks about Avalanche Warp Messaging (AWM).\nDo NOT use for: C-Chain to Ethereum bridging (use bridging skill), token transfers without message passing, or single-chain contracts.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "teleporter",
+        "bridging",
+        "cross-subnet-dapp",
+        "subnet-deployment",
+        "contract-addresses"
+      ],
+      "url": "https://avaxskills.com/warp-messaging/",
+      "skillUrl": "https://avaxskills.com/warp-messaging/SKILL.md"
+    },
+    {
+      "name": "ai-agent-patterns",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Build on-chain AI agents on Avalanche — x402 payment flows, memory patterns, tool use, and multi-step workflows.",
+      "trigger": "Use when: user wants to build AI agents that interact with Avalanche blockchain, implement on-chain memory for AI, create agents that pay for services with AVAX, or build multi-agent systems on Avalanche.\nDo NOT use for: pure LLM chatbots with no blockchain interaction, off-chain only AI pipelines.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "x402-integration",
+        "orchestration",
+        "warp-messaging"
+      ],
+      "url": "https://avaxskills.com/ai-agent-patterns/",
+      "skillUrl": "https://avaxskills.com/ai-agent-patterns/SKILL.md"
+    },
+    {
+      "name": "bridging",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Bridge assets to and from Avalanche — native bridge, Wormhole, LayerZero, and Warp-based bridges.",
+      "trigger": "Use when: user wants to bridge tokens to/from Avalanche, use cross-chain asset transfers, integrate Wormhole or LayerZero on Avalanche, or build Subnet-to-Subnet token bridges.\nDo NOT use for: cross-chain messaging without token transfer (use warp-messaging), C-Chain DeFi without bridging.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "warp-messaging",
+        "contract-addresses",
+        "defi-primitives"
+      ],
+      "url": "https://avaxskills.com/bridging/",
+      "skillUrl": "https://avaxskills.com/bridging/SKILL.md"
+    },
+    {
+      "name": "core-wallet",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Integrate Core Wallet into Avalanche dApps — wallet detection, connection, signing, Subnet switching, multi-chain support (C/P/X-Chain), and Core-specific features.",
+      "trigger": "Use when: user wants to integrate Core Wallet, detect Core extension, connect to Core, switch networks in Core, sign transactions with Core, or build a dApp that works with Avalanche's native wallet.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji",
+        "custom-l1"
+      ],
+      "related_skills": [
+        "wallet-setup",
+        "evm-wallet-integration",
+        "wagmi",
+        "viem",
+        "subnet-deployment"
+      ],
+      "url": "https://avaxskills.com/core-wallet/",
+      "skillUrl": "https://avaxskills.com/core-wallet/SKILL.md"
+    },
+    {
+      "name": "defi-primitives",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Core DeFi on Avalanche C-Chain — AMMs, lending vaults, yield strategies with Trader Joe, BENQI, and Aave.",
+      "trigger": "Use when: user wants to integrate with Avalanche DeFi (Trader Joe swaps, BENQI lending, Aave on Avalanche), read DeFi prices via RPC, or build yield strategies on Avalanche.\nDo NOT use for: Ethereum DeFi (different addresses), custom Subnet DeFi (deploy your own), token creation (use token-standards).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "mainnet"
+      ],
+      "related_skills": [
+        "contract-addresses",
+        "token-standards",
+        "bridging"
+      ],
+      "url": "https://avaxskills.com/defi-primitives/",
+      "skillUrl": "https://avaxskills.com/defi-primitives/SKILL.md"
+    },
+    {
+      "name": "event-driven-backend",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Build off-chain backends that react to Avalanche on-chain events — WebSocket subscriptions, event indexing, webhooks, real-time notifications, and event-driven architecture patterns.",
+      "trigger": "Use when: user wants to listen to contract events, build a backend that reacts to on-chain activity, set up WebSocket subscriptions, index events from Avalanche, send webhooks on-chain events, or build real-time notification systems.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "fuji",
+        "custom-l1"
+      ],
+      "related_skills": [
+        "avalanche-rpc",
+        "avacloud-indexing",
+        "indexing-subgraph",
+        "evm-hardhat"
+      ],
+      "url": "https://avaxskills.com/event-driven-backend/",
+      "skillUrl": "https://avaxskills.com/event-driven-backend/SKILL.md"
+    },
+    {
+      "name": "hackathon-bounties",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Current Avalanche hackathon bounties, winning patterns, judge signals, and DoraHacks submission strategy.",
+      "trigger": "Use when: user is participating in an Avalanche hackathon, wants to win bounties, needs to understand what judges look for, asks about DoraHacks submission, wants to know the best project ideas for Avalanche.\nDo NOT use for: general smart contract development with no hackathon context.\n",
+      "last_updated": "2026-05-01",
+      "related_skills": [
+        "why-avalanche",
+        "x402-integration",
+        "subnet-deployment",
+        "grant-playbook",
+        "warp-messaging"
+      ],
+      "url": "https://avaxskills.com/hackathon-bounties/",
+      "skillUrl": "https://avaxskills.com/hackathon-bounties/SKILL.md"
+    },
+    {
+      "name": "performance-optimization",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Optimize Avalanche applications — sub-second finality patterns, gas optimization, parallel execution, and Subnet scaling.",
+      "trigger": "Use when: user wants to optimize their Avalanche dApp performance, reduce gas costs, take advantage of fast finality, or decide when to use a Subnet for scaling.\nDo NOT use for: Ethereum optimization (different), non-EVM performance tuning.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "gas",
+        "testing"
+      ],
+      "url": "https://avaxskills.com/performance-optimization/",
+      "skillUrl": "https://avaxskills.com/performance-optimization/SKILL.md"
+    },
+    {
+      "name": "revenue-sharing-tokens",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Build revenue-sharing tokens on Avalanche — dividend distribution, protocol fee sharing, streaming payments, royalty splitters, and ERC-20 with claim mechanics.",
+      "trigger": "Use when: user wants to distribute revenue to token holders, build profit-sharing tokens, implement protocol fee distribution, create royalty split contracts, or ask about dividend-paying tokens on Avalanche.\n",
+      "last_updated": "2026-05-07",
+      "avalanche_networks": [
+        "c-chain",
+        "custom-l1"
+      ],
+      "related_skills": [
+        "token-standards",
+        "defi-primitives",
+        "evm-hardhat",
+        "evm-foundry",
+        "rwa-tokenization"
+      ],
+      "url": "https://avaxskills.com/revenue-sharing-tokens/",
+      "skillUrl": "https://avaxskills.com/revenue-sharing-tokens/SKILL.md"
+    },
+    {
+      "name": "rwa-tokenization",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Tokenize real world assets on Avalanche — compliance-aware token design, KYC hooks, partition models, and Subnet isolation.",
+      "trigger": "Use when: user wants to tokenize real-world assets (real estate, bonds, invoices, carbon credits), design compliance-aware token contracts, implement KYC/transfer restrictions, or use a Subnet for regulatory isolation.\nDo NOT use for: simple ERC-20 tokens with no compliance requirements, NFT collections without real asset backing.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "token-standards",
+        "kyc-aml-integration",
+        "security",
+        "subnet-deployment"
+      ],
+      "url": "https://avaxskills.com/rwa-tokenization/",
+      "skillUrl": "https://avaxskills.com/rwa-tokenization/SKILL.md"
+    },
+    {
+      "name": "token-standards",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Choose the right token standard on Avalanche — ERC-20, ERC-1400, ERC-3643, and ERC-3525 with Howey Test guidance.",
+      "trigger": "Use when: user needs to choose a token standard, asks about ERC-1400 vs ERC-3643, needs Howey Test guidance for their token, or wants to understand semi-fungible tokens (ERC-3525).\nDo NOT use for: NFT-only questions (use ERC-721), simple fungible tokens with no compliance requirements (use ERC-20).\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "rwa-tokenization",
+        "revenue-sharing-tokens",
+        "security"
+      ],
+      "url": "https://avaxskills.com/token-standards/",
+      "skillUrl": "https://avaxskills.com/token-standards/SKILL.md"
+    },
+    {
+      "name": "x402-integration",
+      "version": "1.0.0",
+      "tier": 3,
+      "description": "Implement x402 HTTP payment protocol for AI agent micropayments on Avalanche — server middleware and agent client.",
+      "trigger": "Use when: user wants to implement pay-per-request API monetization, AI agent micropayments, HTTP 402 payment flows, or machine-to-machine payments on Avalanche.\nDo NOT use for: human-facing payment UIs, subscription billing, or ERC-20 token transfers without the HTTP 402 flow.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "ai-agent-patterns",
+        "orchestration",
+        "why-avalanche",
+        "hackathon-bounties"
+      ],
+      "url": "https://avaxskills.com/x402-integration/",
+      "skillUrl": "https://avaxskills.com/x402-integration/SKILL.md"
+    },
+    {
+      "name": "audit",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Structured audit prompts and checklists for Avalanche contracts — Subnet-specific checks and Teleporter invariants.",
+      "trigger": "Use when: preparing contracts for external audit, doing an internal security review, prompting an AI agent to review code for vulnerabilities, or verifying Teleporter/Warp invariants before mainnet.\nDo NOT use for: general code quality review, performance optimization, UI/UX review.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "security",
+        "testing",
+        "qa"
+      ],
+      "url": "https://avaxskills.com/audit/",
+      "skillUrl": "https://avaxskills.com/audit/SKILL.md"
+    },
+    {
+      "name": "evm-wallet-integration",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Integrate wallets into Avalanche dApps — Reown AppKit, Dynamic.xyz, and custom wagmi implementations.",
+      "trigger": "Use when: adding wallet connection to an Avalanche dApp, setting up Reown AppKit or Dynamic.xyz, building a custom wagmi wallet connector, or adding multi-wallet support with Subnet network switching.\nDo NOT use for: backend wallet operations, non-browser environments, hardware wallet firmware.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "wagmi",
+        "core-wallet",
+        "frontend-ux"
+      ],
+      "url": "https://avaxskills.com/evm-wallet-integration/",
+      "skillUrl": "https://avaxskills.com/evm-wallet-integration/SKILL.md"
+    },
+    {
+      "name": "frontend-ux",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Mandatory UX rules for Avalanche dApps — chain switching, pending state management, error surfacing, and wallet UX.",
+      "trigger": "Use when: building a dApp UI, implementing wallet connection, handling transactions in React, showing transaction status, or adding Avalanche network switching.\nDo NOT use for: smart contract development, backend APIs, non-web frontends.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "wagmi",
+        "evm-wallet-integration",
+        "qa"
+      ],
+      "url": "https://avaxskills.com/frontend-ux/",
+      "skillUrl": "https://avaxskills.com/frontend-ux/SKILL.md"
+    },
+    {
+      "name": "kyc-aml-integration",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Light KYC/AML integration for Avalanche dApps — Synaps, Fractal, Civic, on-chain identity, and privacy tradeoffs.",
+      "trigger": "Use when: adding KYC/AML compliance to an Avalanche dApp, implementing address allowlisting based on identity verification, integrating Synaps or Civic Pass, or designing compliant RWA tokenization.\nDo NOT use for: general user authentication, non-compliance identity, social login.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "rwa-tokenization",
+        "token-standards",
+        "security"
+      ],
+      "url": "https://avaxskills.com/kyc-aml-integration/",
+      "skillUrl": "https://avaxskills.com/kyc-aml-integration/SKILL.md"
+    },
+    {
+      "name": "orchestration",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Multi-agent orchestration patterns on Avalanche — manager/worker patterns, on-chain coordination, and state management.",
+      "trigger": "Use when: building a multi-agent system on Avalanche, implementing on-chain task queues, coordinating multiple AI agents with on-chain state, or designing agent payment flows.\nDo NOT use for: single-agent tasks, off-chain-only orchestration, non-blockchain AI systems.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "ai-agent-patterns",
+        "x402-integration"
+      ],
+      "url": "https://avaxskills.com/orchestration/",
+      "skillUrl": "https://avaxskills.com/orchestration/SKILL.md"
+    },
+    {
+      "name": "qa",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Pre-launch quality checklist for Avalanche dApps — Fuji to Mainnet promotion gates, validator readiness, and UX testing.",
+      "trigger": "Use when: preparing for mainnet launch, promoting from Fuji to Mainnet, setting up a Subnet for production, defining launch readiness criteria, or building a QA checklist.\nDo NOT use for: day-to-day development, writing new features, debugging individual bugs.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "security",
+        "audit",
+        "frontend-ux"
+      ],
+      "url": "https://avaxskills.com/qa/",
+      "skillUrl": "https://avaxskills.com/qa/SKILL.md"
+    },
+    {
+      "name": "security",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Defensive Solidity on Avalanche — Subnet validator security, precompile risks, Warp trust assumptions, and common attack vectors.",
+      "trigger": "Use when: writing or reviewing Solidity contracts, auditing access control, implementing cross-chain message handlers, configuring precompiles, thinking about Subnet security.\nDo NOT use for: general networking security, AWS/infra hardening, non-smart-contract topics.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "audit",
+        "testing",
+        "qa"
+      ],
+      "url": "https://avaxskills.com/security/",
+      "skillUrl": "https://avaxskills.com/security/SKILL.md"
+    },
+    {
+      "name": "testing",
+      "version": "1.0.0",
+      "tier": 4,
+      "description": "Unit, fuzz, and fork testing for Avalanche contracts — Hardhat and Foundry patterns with local Subnet test environment.",
+      "trigger": "Use when: writing tests for Solidity contracts, setting up a test suite, running fork tests against Fuji or Mainnet, testing cross-chain message flows, or debugging failing tests.\nDo NOT use for: frontend testing, backend API testing, performance load testing.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "audit",
+        "qa",
+        "evm-hardhat",
+        "evm-foundry"
+      ],
+      "url": "https://avaxskills.com/testing/",
+      "skillUrl": "https://avaxskills.com/testing/SKILL.md"
+    },
+    {
+      "name": "account-abstraction",
+      "version": "1.0.0",
+      "tier": 5,
+      "description": "ERC-4337 account abstraction on Avalanche — bundlers, paymasters, smart accounts, and Avalanche-specific patterns.",
+      "trigger": "Use when: implementing gasless transactions, building smart accounts, integrating ERC-4337 bundlers on Avalanche, setting up a paymaster, or creating embedded wallets.\nDo NOT use for: standard EOA wallets, non-AA smart contracts, backend key management.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "evm-wallet-integration",
+        "security",
+        "gas"
+      ],
+      "url": "https://avaxskills.com/account-abstraction/",
+      "skillUrl": "https://avaxskills.com/account-abstraction/SKILL.md"
+    },
+    {
+      "name": "concepts",
+      "version": "1.0.0",
+      "tier": 5,
+      "description": "Core Avalanche mental models — C/P/X-Chain roles, Snow consensus, finality model, Subnet vs L2, and AVAX tokenomics.",
+      "trigger": "Use when: explaining how Avalanche works, learning the C/P/X-Chain distinction, understanding Snow consensus, comparing Subnets to L2 rollups, or explaining AVAX tokenomics.\nDo NOT use for: implementation tasks, writing code, deploying contracts.\n",
+      "last_updated": "2026-05-01",
+      "related_skills": [
+        "why-avalanche",
+        "subnet-deployment",
+        "validator-management"
+      ],
+      "url": "https://avaxskills.com/concepts/",
+      "skillUrl": "https://avaxskills.com/concepts/SKILL.md"
+    },
+    {
+      "name": "grant-playbook",
+      "version": "1.0.0",
+      "tier": 5,
+      "description": "All Avalanche grant programs — infraBUIDL(AI), Retro9000, Codebase grants, and Foundation grants with application templates.",
+      "trigger": "Use when: applying for Avalanche grants, evaluating which grant program fits a project, writing grant applications, or understanding Avalanche Foundation funding criteria.\nDo NOT use for: non-Avalanche grant programs, general fundraising strategy, VC fundraising.\n",
+      "last_updated": "2026-05-01",
+      "related_skills": [
+        "hackathon-bounties",
+        "why-avalanche"
+      ],
+      "url": "https://avaxskills.com/grant-playbook/",
+      "skillUrl": "https://avaxskills.com/grant-playbook/SKILL.md"
+    },
+    {
+      "name": "why-avalanche",
+      "version": "1.0.0",
+      "tier": 5,
+      "description": "When to choose Avalanche — performance benchmarks, Subnet use cases, EVM compatibility story, and competitive positioning.",
+      "trigger": "Use when: evaluating Avalanche for a new project, comparing Avalanche to Ethereum L2s or Cosmos, explaining Avalanche's value proposition, or deciding whether to use C-Chain or a custom Subnet.\nDo NOT use for: implementation details, writing contracts, deploying infrastructure.\n",
+      "last_updated": "2026-05-01",
+      "related_skills": [
+        "concepts",
+        "subnet-deployment"
+      ],
+      "url": "https://avaxskills.com/why-avalanche/",
+      "skillUrl": "https://avaxskills.com/why-avalanche/SKILL.md"
+    },
+    {
+      "name": "cross-subnet-dapp",
+      "version": "1.0.0",
+      "tier": 6,
+      "description": "Build dApps that span multiple Avalanche Subnets — state coordination, Warp messaging patterns, and unified UX.",
+      "trigger": "Use when: building an application that operates across multiple Avalanche Subnets, implementing cross-Subnet state synchronization, designing multi-chain UX for users bridging between Subnets, or using Teleporter for cross-Subnet function calls.\nDo NOT use for: single-chain dApps, non-Avalanche cross-chain bridges, L1-to-L2 bridges.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "warp-messaging",
+        "teleporter",
+        "subnet-deployment"
+      ],
+      "url": "https://avaxskills.com/cross-subnet-dapp/",
+      "skillUrl": "https://avaxskills.com/cross-subnet-dapp/SKILL.md"
+    },
+    {
+      "name": "indexing-subgraph",
+      "version": "1.0.0",
+      "tier": 6,
+      "description": "Index Avalanche smart contracts with The Graph — subgraph deployment on Avalanche and custom indexer alternatives.",
+      "trigger": "Use when: indexing smart contract events on Avalanche, building a subgraph for C-Chain or a Subnet, querying on-chain data via GraphQL, or choosing between The Graph and a custom indexer.\nDo NOT use for: reading live contract state (use RPC calls), off-chain data indexing, non-EVM chains.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "avacloud-indexing",
+        "avalanche-rpc"
+      ],
+      "url": "https://avaxskills.com/indexing-subgraph/",
+      "skillUrl": "https://avaxskills.com/indexing-subgraph/SKILL.md"
+    },
+    {
+      "name": "subnet-governance",
+      "version": "1.0.0",
+      "tier": 6,
+      "description": "Implement on-chain governance for Avalanche custom L1s — voting mechanisms, upgrade paths, and validator coordination.",
+      "trigger": "Use when: implementing governance for a Subnet, setting up Governor contracts on Subnet-EVM, designing upgrade governance for precompile configs, adding timelocks, or implementing emergency pause mechanisms for a Subnet.\nDo NOT use for: C-Chain-only governance, off-chain governance tooling like Snapshot.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "subnet-deployment",
+        "upgradeable-contracts",
+        "security"
+      ],
+      "url": "https://avaxskills.com/subnet-governance/",
+      "skillUrl": "https://avaxskills.com/subnet-governance/SKILL.md"
+    },
+    {
+      "name": "upgradeable-contracts",
+      "version": "1.0.0",
+      "tier": 6,
+      "description": "Implement upgradeable contracts on Avalanche — UUPS, Transparent Proxy, and Beacon proxy patterns with OpenZeppelin.",
+      "trigger": "Use when: implementing upgradeable smart contracts, choosing between UUPS and Transparent Proxy, deploying with hardhat-upgrades plugin, managing upgrade authority, or fixing bugs in deployed contracts.\nDo NOT use for: non-upgradeable contracts, immutable protocol design choices.\n",
+      "last_updated": "2026-05-01",
+      "avalanche_networks": [
+        "fuji",
+        "mainnet"
+      ],
+      "related_skills": [
+        "security",
+        "audit",
+        "testing"
+      ],
+      "url": "https://avaxskills.com/upgradeable-contracts/",
+      "skillUrl": "https://avaxskills.com/upgradeable-contracts/SKILL.md"
+    }
+  ]
+}

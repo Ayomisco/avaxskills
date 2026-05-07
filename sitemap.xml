@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://avaxskills.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/SKILL.md</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/llms.txt</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/api/skills.json</loc><priority>0.9</priority></url>
+
+  <!-- TIER 0: Beginner Onramp -->
+  <url><loc>https://avaxskills.com/quickstart/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/wallet-setup/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/get-testnet-avax/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/first-contract/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/explorer-guide/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/local-dev-environment/SKILL.md</loc><priority>0.8</priority></url>
+
+  <!-- TIER 1: EVM Core -->
+  <url><loc>https://avaxskills.com/evm-hardhat/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/evm-foundry/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/scaffold-avax/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/contract-verification/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/avalanche-rpc/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/avalanche-js/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/viem/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/wagmi/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/platform-cli/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/migrate-from-ethereum/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/nft-basics/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/token-launch/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/data-feeds-oracles/SKILL.md</loc><priority>0.8</priority></url>
+
+  <!-- TIER 2: Avalanche Unique -->
+  <url><loc>https://avaxskills.com/subnet-deployment/SKILL.md</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/subnet-evm-config/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/warp-messaging/SKILL.md</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/teleporter/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/custom-vm/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/avacloud-indexing/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/validator-management/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/contract-addresses/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/gas/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/precompiles/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/avalanche-l1-economics/SKILL.md</loc><priority>0.9</priority></url>
+
+  <!-- TIER 3: Ecosystem Intelligence -->
+  <url><loc>https://avaxskills.com/hackathon-bounties/SKILL.md</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/x402-integration/SKILL.md</loc><priority>1.0</priority></url>
+  <url><loc>https://avaxskills.com/defi-primitives/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/bridging/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/ai-agent-patterns/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/performance-optimization/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/rwa-tokenization/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/token-standards/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/revenue-sharing-tokens/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/core-wallet/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/event-driven-backend/SKILL.md</loc><priority>0.8</priority></url>
+
+  <!-- TIER 4: Quality & Process -->
+  <url><loc>https://avaxskills.com/security/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/testing/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/audit/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/qa/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/frontend-ux/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/orchestration/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/kyc-aml-integration/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/evm-wallet-integration/SKILL.md</loc><priority>0.8</priority></url>
+
+  <!-- TIER 5: Positioning -->
+  <url><loc>https://avaxskills.com/why-avalanche/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/concepts/SKILL.md</loc><priority>0.9</priority></url>
+  <url><loc>https://avaxskills.com/grant-playbook/SKILL.md</loc><priority>0.8</priority></url>
+  <url><loc>https://avaxskills.com/account-abstraction/SKILL.md</loc><priority>0.8</priority></url>
+
+  <!-- TIER 6: Advanced Pro -->
+  <url><loc>https://avaxskills.com/upgradeable-contracts/SKILL.md</loc><priority>0.7</priority></url>
+  <url><loc>https://avaxskills.com/cross-subnet-dapp/SKILL.md</loc><priority>0.7</priority></url>
+  <url><loc>https://avaxskills.com/subnet-governance/SKILL.md</loc><priority>0.7</priority></url>
+  <url><loc>https://avaxskills.com/indexing-subgraph/SKILL.md</loc><priority>0.7</priority></url>
+</urlset>

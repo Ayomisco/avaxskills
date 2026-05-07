@@ -1,0 +1,61 @@
+{
+  "name": "avalanche-skills",
+  "version": "2.0.0",
+  "description": "The definitive AI agent skills package for building on Avalanche. 57 granular skills from beginner onramp to advanced patterns.",
+  "license": "Apache-2.0",
+  "homepage": "https://avaxskills.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalanche-org/avalanche-skills"
+  },
+  "author": "ayomisco_s",
+  "keywords": [
+    "avalanche",
+    "avax",
+    "blockchain",
+    "web3",
+    "skills",
+    "ai-agent",
+    "agent-skills",
+    "openskills",
+    "subnet",
+    "warp",
+    "x402",
+    "defi",
+    "rwa",
+    "solidity",
+    "evm"
+  ],
+  "openskills": {
+    "registry": "avalanche-org/avalanche-skills",
+    "version": "2.0.0",
+    "skillsDir": "skills/",
+    "rootSkill": "SKILL.md",
+    "discovery": {
+      "llmsTxt": "llms.txt",
+      "sitemap": "sitemap.xml",
+      "api": "https://avaxskills.com/api/skills.json"
+    },
+    "tiers": {
+      "0": "Beginner Onramp",
+      "1": "EVM Core",
+      "2": "Avalanche Unique",
+      "3": "Ecosystem Intelligence",
+      "4": "Quality & Process",
+      "5": "Positioning",
+      "6": "Advanced Pro"
+    }
+  },
+  "scripts": {
+    "validate": "npx ts-node scripts/validate-skill.ts",
+    "package": "bash scripts/package-skills.sh",
+    "index": "npx ts-node scripts/generate-index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "js-yaml": "^4.0.0",
+    "@types/js-yaml": "^4.0.0"
+  }
+}
