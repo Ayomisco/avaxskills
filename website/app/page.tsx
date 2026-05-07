@@ -139,10 +139,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-[#0f0f0f]">
-      {/* Header */}
+      {/* Header — wordmark only, no logo (logo lives in hero below) */}
       <header className="border-b border-[#e8e8e8] px-6 py-4">
-        <div className="max-w-3xl mx-auto flex items-center gap-3">
-          <AvaxLogo size={28} />
+        <div className="max-w-3xl mx-auto">
           <span
             className="text-xl font-bold tracking-tight"
             style={{ letterSpacing: "-0.02em" }}
@@ -175,18 +174,13 @@ export default function Home() {
           <h1 className="text-2xl font-bold mb-3" style={{ letterSpacing: "-0.02em" }}>
             AVAXSKILLS
           </h1>
-          <p className="text-[#6b6b6b] text-base mb-1">
-            The missing layer between AI agents and Avalanche apps
+          <p className="text-[#0f0f0f] text-base font-medium mb-2">
+            Build on Avalanche. Your AI agent already knows how.
           </p>
-          <p className="text-[#6b6b6b] text-sm">
-            Modular{" "}
-            <code className="bg-[#f0f0f0] px-1.5 py-0.5 rounded text-xs font-mono text-[#0f0f0f]">
-              SKILL.md
-            </code>{" "}
-            guides for{" "}
-            <strong className="text-[#0f0f0f]">Avalanche</strong> — Subnets,
-            Warp, x402, DeFi. Agents pull markdown over HTTPS;{" "}
-            <strong>no install</strong>.
+          <p className="text-[#6b6b6b] text-sm leading-relaxed">
+            66 focused skill guides — Subnets, Warp, x402, DeFi, RWA, security, and
+            more. Any AI agent fetches exactly what it needs over HTTPS.{" "}
+            <strong className="text-[#0f0f0f]">No install. No config. One URL.</strong>
           </p>
         </div>
 
