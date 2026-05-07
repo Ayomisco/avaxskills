@@ -256,20 +256,71 @@ export default function Home() {
         </p>
 
         {/* HOW TO FETCH */}
-        <section className="mb-10">
+        <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-3">
             HOW TO FETCH
           </h2>
-          <div className="relative">
-            <pre
-              className="font-mono text-sm bg-[#0f0f0f] text-[#e8e8e8] px-5 py-4 rounded-xl overflow-x-auto"
-              style={{ lineHeight: "1.7" }}
-            >
-              <code>{`curl -sSL ${BASE}/SKILL.md
+          <pre
+            className="font-mono text-sm bg-[#0f0f0f] text-[#e8e8e8] px-5 py-4 rounded-xl overflow-x-auto"
+            style={{ lineHeight: "1.7" }}
+          >
+            <code>{`curl -sSL ${BASE}/SKILL.md
 curl -sSL ${BASE}/quickstart/SKILL.md
 curl -sSL ${BASE}/subnet-deployment/SKILL.md
 curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
-            </pre>
+          </pre>
+        </section>
+
+        {/* INSTALL METHODS — right below HOW TO FETCH */}
+        <section className="mb-10">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-3">
+            INSTALL METHODS
+          </h2>
+          <div className="border border-[#e8e8e8] rounded-xl overflow-hidden">
+            {[
+              {
+                label: "curl (zero install — works now)",
+                code: `curl -sSL https://avaxskills.com/SKILL.md\ncurl -sSL https://avaxskills.com/subnet-deployment/SKILL.md`,
+                available: true,
+              },
+              {
+                label: "Tell the agent directly",
+                code: `Read https://avaxskills.com/SKILL.md before building on Avalanche.`,
+                available: true,
+              },
+              {
+                label: "openskills (ecosystem standard)",
+                code: `npx openskills install avalanche-org/avalanche-skills -g`,
+                available: false,
+              },
+              {
+                label: "GitHub Copilot",
+                code: `gh skill install Ayomisco/avaxskills`,
+                available: false,
+              },
+            ].map((method, i, arr) => (
+              <div
+                key={method.label}
+                className={`px-5 py-3.5 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span
+                    className="text-xs font-bold px-1.5 py-0.5 rounded uppercase tracking-wider"
+                    style={
+                      method.available
+                        ? { background: "#f0fff4", color: "#16a34a", border: "1px solid #bbf7d0" }
+                        : { background: "#f5f5f5", color: "#999", border: "1px solid #e5e5e5" }
+                    }
+                  >
+                    {method.available ? "Live" : "Coming"}
+                  </span>
+                  <span className="text-sm font-medium">{method.label}</span>
+                </div>
+                <pre className="font-mono text-xs bg-[#0f0f0f] text-[#e8e8e8] px-3 py-2.5 rounded-lg overflow-x-auto">
+                  <code>{method.code}</code>
+                </pre>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -474,53 +525,6 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
           </div>
         </section>
 
-        {/* Install methods */}
-        <section className="mb-12">
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-3">
-            INSTALL METHODS
-          </h2>
-          <div className="space-y-3">
-            <div className="border border-[#e8e8e8] rounded-xl overflow-hidden">
-              {[
-                {
-                  label: "curl (zero install — works now)",
-                  code: `curl -sSL https://avaxskills.com/SKILL.md\ncurl -sSL https://avaxskills.com/subnet-deployment/SKILL.md`,
-                  available: true,
-                },
-                {
-                  label: "Tell the agent directly",
-                  code: `Read https://avaxskills.com/SKILL.md before building on Avalanche.`,
-                  available: true,
-                },
-                {
-                  label: "openskills (ecosystem standard)",
-                  code: `npx openskills install avalanche-org/avalanche-skills -g`,
-                  available: false,
-                },
-                {
-                  label: "GitHub Copilot",
-                  code: `gh skill install avalanche-org/avalanche-skills`,
-                  available: false,
-                },
-              ].map((method, i, arr) => (
-                <div key={method.label} className={`px-5 py-3.5 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`text-xs font-bold px-1.5 py-0.5 rounded uppercase tracking-wider`}
-                      style={method.available
-                        ? { background: "#f0fff4", color: "#16a34a", border: "1px solid #bbf7d0" }
-                        : { background: "#f5f5f5", color: "#999", border: "1px solid #e5e5e5" }}>
-                      {method.available ? "Live" : "Coming"}
-                    </span>
-                    <span className="text-sm font-medium">{method.label}</span>
-                  </div>
-                  <pre className="font-mono text-xs bg-[#0f0f0f] text-[#e8e8e8] px-3 py-2.5 rounded-lg overflow-x-auto">
-                    <code>{method.code}</code>
-                  </pre>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}
