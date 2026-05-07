@@ -4,7 +4,7 @@ version: "2.0.0"
 spec: "agentskills@1.0"
 license: "Apache-2.0"
 description: >
-  Complete AI agent skills index for building on Avalanche — 57 granular skills
+  Complete AI agent skills index for building on Avalanche — 66 granular skills
   covering beginner onramp, EVM tooling, Subnets, Warp, x402 AI payments, DeFi,
   RWA, security, and ecosystem intelligence. Fetch any skill by URL.
 ---
@@ -37,6 +37,7 @@ Fetch any skill: `curl https://avaxskills.com/{skill-name}/SKILL.md`
 - contract-verification   → https://avaxskills.com/contract-verification/SKILL.md
 - avalanche-rpc           → https://avaxskills.com/avalanche-rpc/SKILL.md
 - avalanche-js            → https://avaxskills.com/avalanche-js/SKILL.md
+- avalanche-sdk           → https://avaxskills.com/avalanche-sdk/SKILL.md
 - viem                    → https://avaxskills.com/viem/SKILL.md
 - wagmi                   → https://avaxskills.com/wagmi/SKILL.md
 - platform-cli            → https://avaxskills.com/platform-cli/SKILL.md
@@ -48,33 +49,37 @@ Fetch any skill: `curl https://avaxskills.com/{skill-name}/SKILL.md`
 ## TIER 2 — Avalanche Unique
 *Custom L1s, cross-chain, and Avalanche's core differentiators.*
 
-- node-setup              → https://avaxskills.com/node-setup/SKILL.md
-- subnet-deployment       → https://avaxskills.com/subnet-deployment/SKILL.md   ⭐ Phase 1
-- subnet-evm-config       → https://avaxskills.com/subnet-evm-config/SKILL.md
-- warp-messaging          → https://avaxskills.com/warp-messaging/SKILL.md      ⭐ Phase 1
-- teleporter              → https://avaxskills.com/teleporter/SKILL.md
-- custom-vm               → https://avaxskills.com/custom-vm/SKILL.md
-- avacloud-indexing       → https://avaxskills.com/avacloud-indexing/SKILL.md
-- validator-management    → https://avaxskills.com/validator-management/SKILL.md
-- contract-addresses      → https://avaxskills.com/contract-addresses/SKILL.md
-- gas                     → https://avaxskills.com/gas/SKILL.md
-- precompiles             → https://avaxskills.com/precompiles/SKILL.md
-- avalanche-l1-economics  → https://avaxskills.com/avalanche-l1-economics/SKILL.md
+- node-setup                  → https://avaxskills.com/node-setup/SKILL.md
+- subnet-deployment           → https://avaxskills.com/subnet-deployment/SKILL.md        ⭐
+- subnet-evm-config           → https://avaxskills.com/subnet-evm-config/SKILL.md
+- warp-messaging              → https://avaxskills.com/warp-messaging/SKILL.md           ⭐
+- teleporter                  → https://avaxskills.com/teleporter/SKILL.md
+- avalanche-ictt              → https://avaxskills.com/avalanche-ictt/SKILL.md
+- custom-vm                   → https://avaxskills.com/custom-vm/SKILL.md
+- avacloud-indexing           → https://avaxskills.com/avacloud-indexing/SKILL.md
+- validator-management        → https://avaxskills.com/validator-management/SKILL.md
+- contract-addresses          → https://avaxskills.com/contract-addresses/SKILL.md
+- gas                         → https://avaxskills.com/gas/SKILL.md
+- precompiles                 → https://avaxskills.com/precompiles/SKILL.md
+- avalanche-l1-economics      → https://avaxskills.com/avalanche-l1-economics/SKILL.md
+- tmpnet                      → https://avaxskills.com/tmpnet/SKILL.md
+- blueprints                  → https://avaxskills.com/blueprints/SKILL.md
+- avalanche-deploy            → https://avaxskills.com/avalanche-deploy/SKILL.md
 
 ## TIER 3 — Ecosystem Intelligence
 *Protocols, AI payments, DeFi, and Avalanche-specific patterns.*
 
-- hackathon-bounties      → https://avaxskills.com/hackathon-bounties/SKILL.md  ⭐ Phase 1
-- x402-integration        → https://avaxskills.com/x402-integration/SKILL.md   ⭐ Phase 1
-- defi-primitives         → https://avaxskills.com/defi-primitives/SKILL.md
-- bridging                → https://avaxskills.com/bridging/SKILL.md
-- ai-agent-patterns       → https://avaxskills.com/ai-agent-patterns/SKILL.md
-- performance-optimization → https://avaxskills.com/performance-optimization/SKILL.md
-- rwa-tokenization        → https://avaxskills.com/rwa-tokenization/SKILL.md   ⭐
-- token-standards         → https://avaxskills.com/token-standards/SKILL.md
-- revenue-sharing-tokens  → https://avaxskills.com/revenue-sharing-tokens/SKILL.md
-- core-wallet             → https://avaxskills.com/core-wallet/SKILL.md
-- event-driven-backend    → https://avaxskills.com/event-driven-backend/SKILL.md
+- hackathon-bounties          → https://avaxskills.com/hackathon-bounties/SKILL.md       ⭐
+- x402-integration            → https://avaxskills.com/x402-integration/SKILL.md         ⭐
+- defi-primitives             → https://avaxskills.com/defi-primitives/SKILL.md
+- bridging                    → https://avaxskills.com/bridging/SKILL.md
+- ai-agent-patterns           → https://avaxskills.com/ai-agent-patterns/SKILL.md
+- performance-optimization    → https://avaxskills.com/performance-optimization/SKILL.md
+- rwa-tokenization            → https://avaxskills.com/rwa-tokenization/SKILL.md         ⭐
+- token-standards             → https://avaxskills.com/token-standards/SKILL.md
+- revenue-sharing-tokens      → https://avaxskills.com/revenue-sharing-tokens/SKILL.md
+- core-wallet                 → https://avaxskills.com/core-wallet/SKILL.md
+- event-driven-backend        → https://avaxskills.com/event-driven-backend/SKILL.md
 
 ## TIER 4 — Quality & Process
 *Security, testing, and shipping safely.*
@@ -89,7 +94,7 @@ Fetch any skill: `curl https://avaxskills.com/{skill-name}/SKILL.md`
 - evm-wallet-integration  → https://avaxskills.com/evm-wallet-integration/SKILL.md
 
 ## TIER 5 — Positioning
-*Architecture decisions and ecosystem context.*
+*Architecture decisions, ecosystem context, and grants.*
 
 - acps                    → https://avaxskills.com/acps/SKILL.md
 - why-avalanche           → https://avaxskills.com/why-avalanche/SKILL.md
@@ -100,19 +105,24 @@ Fetch any skill: `curl https://avaxskills.com/{skill-name}/SKILL.md`
 ## TIER 6 — Advanced Pro
 *Complex patterns for experienced builders.*
 
-- upgradeable-contracts   → https://avaxskills.com/upgradeable-contracts/SKILL.md
-- cross-subnet-dapp       → https://avaxskills.com/cross-subnet-dapp/SKILL.md
-- subnet-governance       → https://avaxskills.com/subnet-governance/SKILL.md
-- indexing-subgraph       → https://avaxskills.com/indexing-subgraph/SKILL.md
+- upgradeable-contracts       → https://avaxskills.com/upgradeable-contracts/SKILL.md
+- cross-subnet-dapp           → https://avaxskills.com/cross-subnet-dapp/SKILL.md
+- subnet-governance           → https://avaxskills.com/subnet-governance/SKILL.md
+- indexing-subgraph           → https://avaxskills.com/indexing-subgraph/SKILL.md
+- safe-multisig               → https://avaxskills.com/safe-multisig/SKILL.md
+- validator-manager-contract  → https://avaxskills.com/validator-manager-contract/SKILL.md
 
 ---
 
 ## Network Reference
 
-| Network | Chain ID | RPC |
-|---|---|---|
-| C-Chain Mainnet | 43114 | https://api.avax.network/ext/bc/C/rpc |
-| Fuji Testnet | 43113 | https://api.avax-test.network/ext/bc/C/rpc |
+| Chain | Mainnet RPC | Fuji RPC |
+| --- | --- | --- |
+| C-Chain | https://api.avax.network/ext/bc/C/rpc | https://api.avax-test.network/ext/bc/C/rpc |
+| P-Chain | https://api.avax.network/ext/bc/P | https://api.avax-test.network/ext/bc/P |
+| X-Chain | https://api.avax.network/ext/bc/X | https://api.avax-test.network/ext/bc/X |
+
+Chain IDs: C-Chain Mainnet = **43114** · Fuji = **43113**
 
 ## Key Addresses (Mainnet C-Chain)
 
