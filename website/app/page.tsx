@@ -178,8 +178,9 @@ export default function Home() {
             Build on Avalanche. Your AI agent already knows how.
           </p>
           <p className="text-[#6b6b6b] text-sm leading-relaxed">
-            66 focused skill guides — Subnets, Warp, x402, DeFi, RWA, security, and
-            more. Any AI agent fetches exactly what it needs over HTTPS.{" "}
+            Every Avalanche concept covered — Subnets, Warp, x402, DeFi, RWA,
+            security, and more. Any AI agent fetches exactly what it needs over
+            HTTPS.{" "}
             <strong className="text-[#0f0f0f]">No install. No config. One URL.</strong>
           </p>
         </div>
