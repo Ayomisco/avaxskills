@@ -392,51 +392,133 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
           </div>
         </section>
 
-        {/* Network Reference */}
+        {/* Network Reference — all chains */}
         <section className="mb-12">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-4">
             NETWORK REFERENCE
           </h2>
-          <div className="border border-[#e8e8e8] rounded-xl overflow-hidden">
+
+          {/* Mainnet */}
+          <p className="text-xs font-semibold text-[#6b6b6b] mb-2 uppercase tracking-wider">Mainnet</p>
+          <div className="border border-[#e8e8e8] rounded-xl overflow-hidden mb-4">
             {[
-              {
-                name: "C-Chain Mainnet",
-                chainId: "43114",
-                rpc: "https://api.avax.network/ext/bc/C/rpc",
-                explorer: "snowtrace.io",
-              },
-              {
-                name: "Fuji Testnet",
-                chainId: "43113",
-                rpc: "https://api.avax-test.network/ext/bc/C/rpc",
-                explorer: "testnet.snowtrace.io",
-              },
-            ].map((net, i) => (
-              <div
-                key={net.name}
-                className={`px-5 py-3.5 ${i === 0 ? "border-b border-[#e8e8e8]" : ""}`}
-              >
+              { name: "C-Chain (EVM / Smart Contracts)", chainId: "43114", rpc: "https://api.avax.network/ext/bc/C/rpc", explorer: "subnets.avax.network/c-chain" },
+              { name: "P-Chain (Validators / Subnets)", chainId: "—", rpc: "https://api.avax.network/ext/bc/P", explorer: "subnets.avax.network/p-chain" },
+              { name: "X-Chain (Asset Exchange)", chainId: "—", rpc: "https://api.avax.network/ext/bc/X", explorer: "subnets.avax.network/x-chain" },
+            ].map((net, i, arr) => (
+              <div key={net.name} className={`px-5 py-3 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}>
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-sm font-semibold mb-1">{net.name}</p>
+                    <p className="text-sm font-semibold mb-0.5">{net.name}</p>
                     <p className="text-xs font-mono text-[#6b6b6b]">{net.rpc}</p>
                   </div>
                   <div className="text-right flex-shrink-0">
-                    <p className="text-xs font-mono text-[#E84142]">
-                      Chain ID: {net.chainId}
-                    </p>
-                    <a
-                      href={`https://${net.explorer}`}
-                      className="text-xs text-[#6b6b6b] hover:text-[#E84142] transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    {net.chainId !== "—" && (
+                      <p className="text-xs font-mono text-[#E84142] mb-0.5">Chain ID: {net.chainId}</p>
+                    )}
+                    <a href={`https://${net.explorer}`} className="text-xs text-[#6b6b6b] hover:text-[#E84142] transition-colors" target="_blank" rel="noopener noreferrer">
                       {net.explorer}
                     </a>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Fuji Testnet */}
+          <p className="text-xs font-semibold text-[#6b6b6b] mb-2 uppercase tracking-wider">Fuji Testnet</p>
+          <div className="border border-[#e8e8e8] rounded-xl overflow-hidden mb-4">
+            {[
+              { name: "C-Chain", chainId: "43113", rpc: "https://api.avax-test.network/ext/bc/C/rpc", explorer: "subnets-test.avax.network/c-chain" },
+              { name: "P-Chain", chainId: "—", rpc: "https://api.avax-test.network/ext/bc/P", explorer: "subnets-test.avax.network/p-chain" },
+              { name: "X-Chain", chainId: "—", rpc: "https://api.avax-test.network/ext/bc/X", explorer: "subnets-test.avax.network/x-chain" },
+            ].map((net, i, arr) => (
+              <div key={net.name} className={`px-5 py-3 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-semibold mb-0.5">{net.name}</p>
+                    <p className="text-xs font-mono text-[#6b6b6b]">{net.rpc}</p>
+                  </div>
+                  <div className="text-right flex-shrink-0">
+                    {net.chainId !== "—" && (
+                      <p className="text-xs font-mono text-[#E84142] mb-0.5">Chain ID: {net.chainId}</p>
+                    )}
+                    <a href={`https://${net.explorer}`} className="text-xs text-[#6b6b6b] hover:text-[#E84142] transition-colors" target="_blank" rel="noopener noreferrer">
+                      {net.explorer}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Subnet-EVM */}
+          <p className="text-xs font-semibold text-[#6b6b6b] mb-2 uppercase tracking-wider">Custom L1 / Subnet-EVM</p>
+          <div className="border border-[#e8e8e8] rounded-xl overflow-hidden">
+            {[
+              { name: "Local (Avalanche-CLI)", chainId: "custom", rpc: "http://localhost:9650/ext/bc/{chainID}/rpc", explorer: "—" },
+              { name: "AvaCloud Managed RPC", chainId: "custom", rpc: "https://{subnet-id}.rpc.avax.network", explorer: "routescan.io" },
+            ].map((net, i, arr) => (
+              <div key={net.name} className={`px-5 py-3 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-semibold mb-0.5">{net.name}</p>
+                    <p className="text-xs font-mono text-[#6b6b6b]">{net.rpc}</p>
+                  </div>
+                  <div className="text-right flex-shrink-0">
+                    <p className="text-xs font-mono text-[#E84142]">Chain ID: {net.chainId}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Install methods */}
+        <section className="mb-12">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-3">
+            INSTALL METHODS
+          </h2>
+          <div className="space-y-3">
+            <div className="border border-[#e8e8e8] rounded-xl overflow-hidden">
+              {[
+                {
+                  label: "curl (zero install — works now)",
+                  code: `curl -sSL https://avaxskills.com/SKILL.md\ncurl -sSL https://avaxskills.com/subnet-deployment/SKILL.md`,
+                  available: true,
+                },
+                {
+                  label: "Tell the agent directly",
+                  code: `Read https://avaxskills.com/SKILL.md before building on Avalanche.`,
+                  available: true,
+                },
+                {
+                  label: "openskills (ecosystem standard)",
+                  code: `npx openskills install avalanche-org/avalanche-skills -g`,
+                  available: false,
+                },
+                {
+                  label: "GitHub Copilot",
+                  code: `gh skill install avalanche-org/avalanche-skills`,
+                  available: false,
+                },
+              ].map((method, i, arr) => (
+                <div key={method.label} className={`px-5 py-3.5 ${i < arr.length - 1 ? "border-b border-[#e8e8e8]" : ""}`}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className={`text-xs font-bold px-1.5 py-0.5 rounded uppercase tracking-wider`}
+                      style={method.available
+                        ? { background: "#f0fff4", color: "#16a34a", border: "1px solid #bbf7d0" }
+                        : { background: "#f5f5f5", color: "#999", border: "1px solid #e5e5e5" }}>
+                      {method.available ? "Live" : "Coming"}
+                    </span>
+                    <span className="text-sm font-medium">{method.label}</span>
+                  </div>
+                  <pre className="font-mono text-xs bg-[#0f0f0f] text-[#e8e8e8] px-3 py-2.5 rounded-lg overflow-x-auto">
+                    <code>{method.code}</code>
+                  </pre>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>
@@ -471,7 +553,7 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
               @ayomisco_s on X
             </a>
             <a
-              href="https://github.com/avalanche-org/avalanche-skills"
+              href="https://github.com/Ayomisco/avaxskills"
               className="hover:text-[#E84142] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -553,7 +635,7 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
             </a>
             <span className="text-[#ddd]">·</span>
             <a
-              href="https://github.com/avalanche-org/avalanche-skills"
+              href="https://github.com/Ayomisco/avaxskills"
               className="hover:text-[#E84142] transition-colors text-[#6b6b6b]"
               target="_blank"
               rel="noopener noreferrer"
@@ -562,7 +644,7 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
             </a>
             <span className="text-[#ddd]">·</span>
             <a
-              href="https://github.com/avalanche-org/avalanche-skills/pulls"
+              href="https://github.com/Ayomisco/avaxskills/pulls"
               className="hover:text-[#E84142] transition-colors text-[#6b6b6b]"
               target="_blank"
               rel="noopener noreferrer"
