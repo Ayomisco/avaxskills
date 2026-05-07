@@ -1,0 +1,92 @@
+# Avalanche Skills
+> The definitive AI agent skills package for building on Avalanche.
+> 57 granular skills. Zero install. One URL gets you everything.
+
+## Quick start (no install required)
+curl -sSL https://avaxskills.com/SKILL.md
+
+## Web method (paste into any agent prompt)
+Read https://avaxskills.com/SKILL.md before building on Avalanche.
+
+## Install (adds to agent config files)
+npx openskills install avalanche-org/avalanche-skills -g
+gh skill install avalanche-org/avalanche-skills
+npx skills add avalanche-org/avalanche-skills
+
+## Skills index (JSON)
+https://avaxskills.com/api/skills.json
+
+## Tier 0 — Beginner Onramp (start here if new to Avalanche)
+- https://avaxskills.com/quickstart/SKILL.md — Zero to first transaction in 10 min
+- https://avaxskills.com/wallet-setup/SKILL.md — MetaMask + Core Wallet setup
+- https://avaxskills.com/get-testnet-avax/SKILL.md — Fuji faucets and testnet tokens
+- https://avaxskills.com/first-contract/SKILL.md — Deploy first Solidity contract
+- https://avaxskills.com/explorer-guide/SKILL.md — Read Snowtrace and chain explorers
+- https://avaxskills.com/local-dev-environment/SKILL.md — Local Avalanche dev environment
+
+## Tier 1 — EVM Core
+- https://avaxskills.com/evm-hardhat/SKILL.md — Hardhat for Avalanche
+- https://avaxskills.com/evm-foundry/SKILL.md — Foundry/Forge for Avalanche
+- https://avaxskills.com/scaffold-avax/SKILL.md — Scaffold Avalanche dApps
+- https://avaxskills.com/contract-verification/SKILL.md — Verify contracts
+- https://avaxskills.com/avalanche-rpc/SKILL.md — C/P/X-Chain RPC calls
+- https://avaxskills.com/avalanche-js/SKILL.md — avalanchejs SDK
+- https://avaxskills.com/viem/SKILL.md — viem TypeScript client
+- https://avaxskills.com/wagmi/SKILL.md — React hooks for Avalanche
+- https://avaxskills.com/platform-cli/SKILL.md — Platform CLI for Avalanche L1s
+- https://avaxskills.com/migrate-from-ethereum/SKILL.md — Migrate dApps from Ethereum
+- https://avaxskills.com/nft-basics/SKILL.md — ERC-721/1155 NFTs on Avalanche
+- https://avaxskills.com/token-launch/SKILL.md — Launch an ERC-20 token
+- https://avaxskills.com/data-feeds-oracles/SKILL.md — Chainlink and Pyth oracles
+
+## Tier 2 — Avalanche Unique (core differentiators)
+- https://avaxskills.com/subnet-deployment/SKILL.md — Create custom Avalanche L1s
+- https://avaxskills.com/subnet-evm-config/SKILL.md — Subnet-EVM configuration
+- https://avaxskills.com/warp-messaging/SKILL.md — Cross-chain via Teleporter
+- https://avaxskills.com/teleporter/SKILL.md — Teleporter deep dive
+- https://avaxskills.com/custom-vm/SKILL.md — Custom virtual machines
+- https://avaxskills.com/avacloud-indexing/SKILL.md — AvaCloud Data API
+- https://avaxskills.com/validator-management/SKILL.md — Validators and staking
+- https://avaxskills.com/contract-addresses/SKILL.md — All system contract addresses
+- https://avaxskills.com/gas/SKILL.md — Avalanche fee mechanics
+- https://avaxskills.com/precompiles/SKILL.md — Precompile reference
+- https://avaxskills.com/avalanche-l1-economics/SKILL.md — L1 tokenomics and economics
+
+## Tier 3 — Ecosystem Intelligence
+- https://avaxskills.com/hackathon-bounties/SKILL.md — Live bounty data
+- https://avaxskills.com/x402-integration/SKILL.md — AI agent payments on AVAX
+- https://avaxskills.com/defi-primitives/SKILL.md — DeFi on C-Chain
+- https://avaxskills.com/bridging/SKILL.md — Bridge assets to/from Avalanche
+- https://avaxskills.com/ai-agent-patterns/SKILL.md — On-chain AI agents
+- https://avaxskills.com/performance-optimization/SKILL.md — Speed and gas optimization
+- https://avaxskills.com/rwa-tokenization/SKILL.md — Real world asset tokenization
+- https://avaxskills.com/token-standards/SKILL.md — ERC-20/1400/3643/3525
+- https://avaxskills.com/revenue-sharing-tokens/SKILL.md — Revenue distribution tokens
+- https://avaxskills.com/core-wallet/SKILL.md — Core Wallet integration
+- https://avaxskills.com/event-driven-backend/SKILL.md — Event-driven backend patterns
+
+## Tier 4 — Quality & Process
+- https://avaxskills.com/security/SKILL.md — Defensive Solidity and security
+- https://avaxskills.com/testing/SKILL.md — Unit, fuzz, fork testing
+- https://avaxskills.com/audit/SKILL.md — Audit prompts and checklists
+- https://avaxskills.com/qa/SKILL.md — Pre-launch quality gates
+- https://avaxskills.com/frontend-ux/SKILL.md — dApp UX rules
+- https://avaxskills.com/orchestration/SKILL.md — Multi-agent patterns
+- https://avaxskills.com/kyc-aml-integration/SKILL.md — KYC/AML integration
+- https://avaxskills.com/evm-wallet-integration/SKILL.md — Wallet integration
+
+## Tier 5 — Positioning
+- https://avaxskills.com/why-avalanche/SKILL.md — When to choose Avalanche
+- https://avaxskills.com/concepts/SKILL.md — Core mental models
+- https://avaxskills.com/grant-playbook/SKILL.md — Avalanche grant programs
+- https://avaxskills.com/account-abstraction/SKILL.md — ERC-4337 on Avalanche
+
+## Tier 6 — Advanced Pro
+- https://avaxskills.com/upgradeable-contracts/SKILL.md — Proxy patterns
+- https://avaxskills.com/cross-subnet-dapp/SKILL.md — Multi-Subnet applications
+- https://avaxskills.com/subnet-governance/SKILL.md — Subnet governance
+- https://avaxskills.com/indexing-subgraph/SKILL.md — The Graph on Avalanche
+
+## Source
+https://github.com/avalanche-org/avalanche-skills
+Apache-2.0 · avaxskills.com · @ayomisco_s
