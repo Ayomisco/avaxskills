@@ -59,8 +59,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    site: "@ayomisco_s",
-    creator: "@ayomisco_s",
+    site: "@avaxskills",
+    creator: "@avaxskills",
     title: "AVAXSKILLS",
     description:
       "Build on Avalanche. Your AI agent already knows how. Every concept covered — Subnets, Warp, x402, DeFi. One URL.",
