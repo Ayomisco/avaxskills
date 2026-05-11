@@ -37,7 +37,7 @@ curl -sSL https://avaxskills.com/x402-integration/SKILL.md  # AI agent payments
 | **curl** (zero install) | `curl -sSL https://avaxskills.com/SKILL.md` | ✅ Live |
 | **Tell the agent** | `Read https://avaxskills.com/SKILL.md before building on Avalanche.` | ✅ Live |
 | **npm** | `npm install avaxskills` | ✅ Live |
-| **openskills** | `npx openskills install Ayomisco/avaxskills -g` | 🔜 Coming |
+| **openskills** | `npx openskills install Ayomisco/avaxskills -g` | ✅ Live |
 | **GitHub Copilot** | `gh skill install Ayomisco/avaxskills` | 🔜 Coming |
 
 ---

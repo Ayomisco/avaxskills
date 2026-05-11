@@ -283,16 +283,19 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
                 code: `Read https://avaxskills.com/SKILL.md before building on Avalanche.`,
                 available: true,
               },
+
+              {
+                label: "openskills → installs to ~/.claude/skills",
+                code: `npx openskills install Ayomisco/avaxskills -g`,
+                available: true,
+              },
+
               {
                 label: "npm",
                 code: `npm install avaxskills`,
                 available: true,
               },
-              {
-                label: "openskills (ecosystem standard)",
-                code: `npx openskills install Ayomisco/avaxskills -g`,
-                available: false,
-              },
+              
               {
                 label: "GitHub Copilot",
                 code: `gh skill install Ayomisco/avaxskills`,
