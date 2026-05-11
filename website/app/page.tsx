@@ -140,7 +140,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-[#0f0f0f]">
       {/* Header — wordmark only, no logo (logo lives in hero below) */}
-      <header className="border-b border-[#e8e8e8] px-6 py-4">
+      {/* <header className="border-b border-[#e8e8e8] px-6 py-4">
         <div className="max-w-3xl mx-auto">
           <span
             className="text-xl font-bold tracking-tight"
@@ -150,7 +150,7 @@ export default function Home() {
             <span>SKILLS</span>
           </span>
         </div>
-      </header>
+      </header> */}
 
       <main className="max-w-3xl mx-auto px-6 py-12">
         {/* Hero */}
@@ -284,8 +284,13 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
                 available: true,
               },
               {
+                label: "npm",
+                code: `npm install avaxskills`,
+                available: true,
+              },
+              {
                 label: "openskills (ecosystem standard)",
-                code: `npx openskills install avalanche-org/avalanche-skills -g`,
+                code: `npx openskills install Ayomisco/avaxskills -g`,
                 available: false,
               },
               {

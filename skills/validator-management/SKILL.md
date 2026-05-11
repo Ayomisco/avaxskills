@@ -87,32 +87,19 @@ Via Avalanche CLI:
 avalanche primaryNetwork addValidator \
   --network fuji \
   --nodeID NodeID-7Xhw2mDxuDS44j42TCB6U5579esbSt3Lg \
-  --stakeAmount 1000000000  \  # 1 AVAX in nAVAX for Fuji
+  --stakeAmount 1000000000 \
   --startTime "2024-06-01T00:00:00Z" \
   --endTime "2024-07-01T00:00:00Z" \
   --key myKey \
-  --delegation-fee 2  # 2% fee
+  --delegation-fee 2
 ```
 
-Via P-Chain API:
+Via Avalanche CLI (recommended — P-Chain API keystore is deprecated on public nodes):
 ```bash
-curl -X POST https://api.avax-test.network/ext/bc/P \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 1,
-    "method": "platform.addValidator",
-    "params": {
-      "nodeID": "NodeID-7Xhw2mDxuDS44j42TCB6U5579esbSt3Lg",
-      "startTime": 1717200000,
-      "endTime": 1719792000,
-      "stakeAmount": 1000000000,
-      "rewardAddress": "P-fuji1youraddress...",
-      "delegationFeeRate": 2,
-      "username": "myUser",
-      "password": "myPass"
-    }
-  }'
+# Use Platform CLI or Avalanche CLI for validator operations
+# The legacy platform.addValidator JSON-RPC with username/password
+# is disabled on public nodes (api.avax-test.network). Use CLI instead.
+avalanche primaryNetwork addValidator --network fuji --key myKey
 ```
 
 ### Step 4 — Add Validator to Your Subnet

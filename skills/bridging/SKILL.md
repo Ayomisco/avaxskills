@@ -46,15 +46,17 @@ Supports: ETH, USDC, WBTC, LINK, DAI, USDT, and more. Uses a multisig federation
 
 Wormhole is deployed on Avalanche and supports 20+ chains. Uses a guardian network of 19 validators.
 
-**Core Bridge on Avalanche Mainnet:** `0x0e082F06FF657D94310cB8cE8B0D9a04541d8052`
+**Token Bridge on Avalanche Mainnet:** `0x0e082F06FF657D94310cB8cE8B0D9a04541d8052`
 
-**Token Bridge:** `0x0e082F06FF657D94310cB8cE8B0D9a04541d8052`
+> Note: The Core Bridge (relayer) and Token Bridge are separate contracts with different addresses.
+> Always verify current addresses from the Wormhole SDK before deploying:
+> `npm install @wormhole-foundation/sdk` → `wormhole("Avalanche").config.contracts`
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-interface IWormholeBridge {
+interface IWormholeTokenBridge {
     function transferTokens(
         address token,
         uint256 amount,
@@ -82,7 +84,8 @@ struct TransferWithPayload {
 }
 
 contract WormholeBridgeUser {
-    IWormholeBridge constant BRIDGE = IWormholeBridge(0x0e082F06FF657D94310cB8cE8B0D9a04541d8052);
+    // Token Bridge address — verify against Wormhole SDK before use
+    IWormholeTokenBridge constant TOKEN_BRIDGE = IWormholeTokenBridge(0x0e082F06FF657D94310cB8cE8B0D9a04541d8052);
 
     // Chain IDs (Wormhole's own numbering system)
     uint16 constant WORMHOLE_AVAX = 6;
@@ -93,12 +96,12 @@ contract WormholeBridgeUser {
     // Bridge USDC from Avalanche to Ethereum
     function bridgeToEthereum(address token, uint256 amount, address ethRecipient) external payable {
         IERC20(token).transferFrom(msg.sender, address(this), amount);
-        IERC20(token).approve(address(BRIDGE), amount);
+        IERC20(token).approve(address(TOKEN_BRIDGE), amount);
 
         // Convert Ethereum address to bytes32
         bytes32 recipient = bytes32(uint256(uint160(ethRecipient)));
 
-        BRIDGE.transferTokens{value: msg.value}(
+        TOKEN_BRIDGE.transferTokens{value: msg.value}(
             token,
             amount,
             WORMHOLE_ETH,      // Destination chain

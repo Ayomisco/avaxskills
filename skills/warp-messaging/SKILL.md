@@ -322,8 +322,13 @@ curl -X POST https://api.avax-test.network/ext/info \
   -d '{"jsonrpc":"2.0","id":1,"method":"info.getBlockchainID","params":{"alias":"C"}}'
 # Returns: "blockchainID": "yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp"
 
-# Convert CB58 to bytes32 using cast:
-cast --to-bytes32 $(echo -n "yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp" | base64 -d | xxd -p -c 1000)
+# Convert CB58 to bytes32 using avalanchejs (CB58 is NOT base64):
+node -e "
+const { utils } = require('@avalabs/avalanchejs');
+const hex = '0x' + Buffer.from(utils.cb58Decode('yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp')).toString('hex');
+console.log(hex);
+"
+# Or read the blockchain ID as hex directly from AvalancheGo info API (returns hex via eth_chainId)
 ```
 
 Or use the Teleporter Registry to look up chain IDs:

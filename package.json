@@ -1,16 +1,17 @@
 {
-  "name": "avalanche-skills",
+  "name": "avaxskills",
   "version": "2.0.0",
-  "description": "The definitive AI agent skills package for building on Avalanche. 57 granular skills from beginner onramp to advanced patterns.",
+  "description": "The definitive AI agent skills package for building on Avalanche. 67 granular skills from beginner onramp to advanced patterns.",
   "license": "Apache-2.0",
   "homepage": "https://avaxskills.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avalanche-org/avalanche-skills"
+    "url": "https://github.com/Ayomisco/avaxskills"
   },
   "author": "ayomisco_s",
   "keywords": [
     "avalanche",
+    "avaxskills",
     "avax",
     "blockchain",
     "web3",
@@ -19,15 +20,36 @@
     "agent-skills",
     "openskills",
     "subnet",
+    "l1",
+    "c-chain",
+    "p-chain",
+    "x-chain",
+    "fuji",
+    "testnet",
     "warp",
+    "teleporter",
+    "ictt",
     "x402",
     "defi",
     "rwa",
     "solidity",
-    "evm"
+    "evm",
+    "avalanchego",
+    "snow-consensus",
+    "validator",
+    "precompile",
+    "nativeminter",
+    "feemanager",
+    "scaffold",
+    "hardhat",
+    "foundry",
+    "viem",
+    "wagmi",
+    "avacloud",
+    "acp"
   ],
   "openskills": {
-    "registry": "avalanche-org/avalanche-skills",
+    "registry": "Ayomisco/avaxskills",
     "version": "2.0.0",
     "skillsDir": "skills/",
     "rootSkill": "SKILL.md",
@@ -46,6 +68,14 @@
       "6": "Advanced Pro"
     }
   },
+  "files": [
+    "skills/",
+    "SKILL.md",
+    "AGENTS.md",
+    "llms.txt",
+    "sitemap.xml",
+    "README.md"
+  ],
   "scripts": {
     "validate": "npx ts-node scripts/validate-skill.ts",
     "package": "bash scripts/package-skills.sh",

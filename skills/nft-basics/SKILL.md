@@ -35,11 +35,9 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract AvalancheNFT is ERC721URIStorage, ERC721Royalty, Ownable {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIds;
+    uint256 private _nextTokenId;
 
     uint256 public maxSupply;
     uint256 public mintPrice;
@@ -64,10 +62,9 @@ contract AvalancheNFT is ERC721URIStorage, ERC721Royalty, Ownable {
     function mint(address to, string memory uri) external payable returns (uint256) {
         require(publicMintOpen || msg.sender == owner(), "minting closed");
         require(msg.value >= mintPrice, "insufficient payment");
-        require(_tokenIds.current() < maxSupply, "sold out");
+        require(_nextTokenId < maxSupply, "sold out");
 
-        _tokenIds.increment();
-        uint256 newId = _tokenIds.current();
+        uint256 newId = _nextTokenId++;
         _safeMint(to, newId);
         _setTokenURI(newId, uri);
 
@@ -298,7 +295,7 @@ export default {
 | Marketplace | URL | Standard |
 |---|---|---|
 | Joepegs | https://joepegs.com | ERC-721, ERC-1155 |
-| Campfire | https://campfire.exchange | ERC-721 |
+| Element | https://element.market/avax | ERC-721, ERC-1155 |
 | NFTrade | https://nftrade.com | ERC-721, ERC-1155 |
 
 To list: deploy contract, verify on explorer, submit to marketplace via their listing page.
@@ -309,7 +306,7 @@ To list: deploy contract, verify on explorer, submit to marketplace via their li
 2. Prepare off-chain metadata JSON and upload to IPFS (Pinata / NFT.Storage)
 3. Set `_baseURI()` to point at your IPFS CID gateway URL
 4. Deploy to Fuji, test `safeMint`, verify `tokenURI` returns correct metadata
-5. Deploy to mainnet, verify on Snowtrace, list on Campfire / Joepegs
+5. Deploy to mainnet, verify on Snowtrace, list on Joepegs / Element
 
 ## Key concepts
 
@@ -320,7 +317,7 @@ To list: deploy contract, verify on explorer, submit to marketplace via their li
 | `tokenURI` | Returns metadata URL for a given token ID |
 | EIP-2981 | Royalty standard — `royaltyInfo(tokenId, salePrice)` returns `(receiver, amount)` |
 | IPFS CID | Content-addressed identifier — metadata persists even if your server goes down |
-| Campfire | Avalanche NFT marketplace at `campfire.exchange` |
+| Element | Avalanche NFT marketplace at `element.market/avax` |
 
 ## Common errors
 

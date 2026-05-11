@@ -58,7 +58,7 @@ Note: Precompiles only exist if enabled in genesis. Calling a disabled precompil
 | Contract | Address | Notes |
 |---|---|---|
 | Teleporter Messenger | 0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf | Same on all EVM chains |
-| Teleporter Registry | 0x7C43605E14F391720e1b37E49C78b4b43A580DA8 | Registry of Teleporter versions |
+| Teleporter Registry | 0x7C43605E14F391720e1b37E49C78C4b03A488d98 | Registry of Teleporter versions |
 
 ### DEX — Trader Joe
 

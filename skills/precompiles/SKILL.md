@@ -65,7 +65,7 @@ contract DeployerManager {
         IAllowList(0x0200000000000000000000000000000000000000);
 
     modifier onlyAdmin() {
-        require(DEPLOYER_ALLOW_LIST.readAllowList(msg.sender) == DEPLOYER_ALLOW_LIST.ADMIN(), "Not admin");
+        require(DEPLOYER_ALLOW_LIST.readAllowList(msg.sender) == 2, "Not admin"); // 2 = ADMIN role
         _;
     }
 
