@@ -251,7 +251,7 @@ export default function Home() {
         </p>
 
         {/* HOW TO FETCH */}
-        <section className="mb-6">
+        {/* <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-[#6b6b6b] mb-3">
             HOW TO FETCH
           </h2>
@@ -264,7 +264,7 @@ curl -sSL ${BASE}/quickstart/SKILL.md
 curl -sSL ${BASE}/subnet-deployment/SKILL.md
 curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
           </pre>
-        </section>
+        </section> */}
 
         {/* INSTALL METHODS — right below HOW TO FETCH */}
         <section className="mb-10">
@@ -275,7 +275,7 @@ curl -sSL ${BASE}/x402-integration/SKILL.md`}</code>
             {[
               {
                 label: "curl (zero install — works now)",
-                code: `curl -sSL https://avaxskills.com/SKILL.md\ncurl -sSL https://avaxskills.com/subnet-deployment/SKILL.md`,
+                code: `curl -sSL https://avaxskills.com/SKILL.md\ncurl -sSL ${BASE}/quickstart/SKILL.md\ncurl -sSL ${BASE}/subnet-deployment/SKILL.md\ncurl -sSL ${BASE}/x402-integration/SKILL.md`,
                 available: true,
               },
               {
